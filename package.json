@@ -1,0 +1,17 @@
+{
+  "name": "julin-taeubner-portfolio",
+  "version": "1.0.0",
+  "description": "Professional actress portfolio for Julin Täubner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/optimize-images.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  },
+  "allowScripts": {
+    "sharp@0.33.5": true
+  }
+}

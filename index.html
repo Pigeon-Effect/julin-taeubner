@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julin Täubner · 菊麟 — Actress / Schauspielerin / 演员</title>
+  <meta name="description" content="Official portfolio of Julin Täubner (菊麟) — German–Chinese actress. Film, television &amp; commercial work. Languages: German, Mandarin, English." />
+  <meta name="author" content="Julin Täubner" />
+  <meta name="theme-color" content="#14110f" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Julin Täubner · 菊麟 — Actress" />
+  <meta property="og:description" content="German–Chinese actress. Film, television &amp; commercial work." />
+  <meta property="og:image" content="assets/img/gallery/neutral_grey_background-lg.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23b23a2e'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23f7f4ef' font-family='serif'%3E菊%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipToContent">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="brand" href="#hero" aria-label="Julin Täubner — home">
+        <span class="brand-cn">菊麟</span>
+        <span class="brand-en">Julin&nbsp;Täubner</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#filmography" data-i18n="nav.filmography">Filmography</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#connect" data-i18n="nav.connect">Connect</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-setlang="de">DE</button>
+          <button type="button" data-setlang="zh">中文</button>
+          <button type="button" data-setlang="en">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-media">
+        <picture>
+          <source type="image/webp" srcset="assets/img/gallery/neutral_grey_background-lg.webp" />
+          <img src="assets/img/gallery/neutral_grey_background-lg.jpg" alt="Julin Täubner — portrait" fetchpriority="high" />
+        </picture>
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content wrap">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Actress · German–Chinese</p>
+        <h1 class="hero-title">
+          <span class="hero-name-en">Julin Täubner</span>
+          <span class="hero-name-cn">菊麟</span>
+        </h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">
+          Film, television &amp; international cinema. Working across German, Mandarin and English.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#filmography" data-i18n="hero.ctaWork">View Work</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.ctaContact">Get in Touch</a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll down">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <span class="scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-portrait reveal">
+          <picture>
+            <source type="image/webp" srcset="assets/img/gallery/bw_artsy_01-lg.webp" />
+            <img src="assets/img/gallery/bw_artsy_01-lg.jpg" alt="Julin Täubner — editorial portrait" loading="lazy" />
+          </picture>
+        </div>
+
+        <div class="about-body">
+          <p class="section-kicker" data-i18n="about.kicker">About</p>
+          <h2 class="section-title reveal" data-i18n="about.title">Between two cultures, one craft.</h2>
+          <p class="about-lead reveal" data-i18n="about.lead"></p>
+
+          <div class="stats reveal" id="statsGrid" aria-label="Vital statistics"></div>
+
+          <div class="about-cols">
+            <div class="reveal">
+              <h3 class="sub-title" data-i18n="about.languagesTitle">Languages</h3>
+              <ul class="lang-list" id="languagesList"></ul>
+            </div>
+            <div class="reveal">
+              <h3 class="sub-title" data-i18n="about.skillsTitle">Skills</h3>
+              <ul class="chips" id="skillsList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FILMOGRAPHY ============ -->
+    <section class="section filmography" id="filmography">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="film.kicker">Selected Work</p>
+        <h2 class="section-title reveal" data-i18n="film.title">Filmography</h2>
+
+        <div class="film-tabs" id="filmTabs" role="tablist" aria-label="Filmography categories"></div>
+        <div class="film-groups" id="filmGroups"></div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="gallery.kicker">Portfolio</p>
+        <h2 class="section-title reveal" data-i18n="gallery.title">Gallery</h2>
+
+        <div class="gallery-filters" id="galleryFilters" role="group" aria-label="Filter gallery"></div>
+        <div class="masonry" id="masonry"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONNECT / SOCIAL ============ -->
+    <section class="section connect" id="connect">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="connect.kicker">Follow</p>
+        <h2 class="section-title reveal" data-i18n="connect.title">Connect</h2>
+        <div class="social-grid" id="socialGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-intro">
+          <p class="section-kicker" data-i18n="contact.kicker">Booking</p>
+          <h2 class="section-title reveal" data-i18n="contact.title">Let's work together</h2>
+          <p class="contact-lead reveal" data-i18n="contact.lead"></p>
+          <a class="contact-email" href="mailto:julintaeubner@gmail.com" id="contactEmail">julintaeubner@gmail.com</a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="cf-name" data-i18n="contact.name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="cf-email" data-i18n="contact.email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="cf-msg" data-i18n="contact.message">Message</label>
+            <textarea id="cf-msg" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span class="footer-brand">菊麟 · Julin Täubner</span>
+      <span class="footer-copy">© <span id="year"></span> Julin Täubner. <span data-i18n="footer.rights">All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <figure class="lb-figure">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
