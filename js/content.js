@@ -28,7 +28,7 @@ window.SITE = (() => {
       "hero.scroll": "Scrollen",
 
       "about.kicker": "Über mich",
-      "about.title": "Zwischen zwei Kulturen, ein Handwerk.",
+      "about.title": "Zwischen zwei Kulturen",
       "about.lead": "Julin Täubner ist eine deutsch-chinesische Schauspielerin mit Wurzeln in Deutschland und Nanjing. Sie arbeitet mühelos zwischen europäischem und asiatischem Kino — von intimen Arthouse-Rollen bis zu actiongeladenen Hauptrollen — getragen von Tanz, Kampfkunst und einer präzisen körperlichen Präsenz.",
       "about.languagesTitle": "Sprachen",
       "about.skillsTitle": "Fähigkeiten",
@@ -72,7 +72,7 @@ window.SITE = (() => {
       "hero.scroll": "向下滑动",
 
       "about.kicker": "关于",
-      "about.title": "身处两种文化，专注一门技艺。",
+      "about.title": "身处两种文化",
       "about.lead": "菊麟是一位德中混血演员，血脉连结德国与南京。她自如穿梭于欧洲与亚洲影坛——从细腻的文艺片到充满动作张力的主角——以舞蹈、武术与精准的肢体表现力为根基。",
       "about.languagesTitle": "语言",
       "about.skillsTitle": "技能",
@@ -116,7 +116,7 @@ window.SITE = (() => {
       "hero.scroll": "Scroll",
 
       "about.kicker": "About",
-      "about.title": "Between two cultures, one craft.",
+      "about.title": "Between two cultures",
       "about.lead": "Julin Täubner is a German–Chinese actress with roots in Germany and Nanjing. She moves fluidly between European and Asian cinema — from intimate arthouse roles to action-driven leads — grounded in dance, martial arts and a precise physical presence.",
       "about.languagesTitle": "Languages",
       "about.skillsTitle": "Skills",
@@ -223,7 +223,6 @@ window.SITE = (() => {
      Category filters + per-image category mapping.
      Captions are the localized category name (kept elegant & light). */
   const GALLERY_CATS = [
-    { id: "all", label: { de: "Alle", zh: "全部", en: "All" } },
     { id: "studio", label: { de: "Studio", zh: "棚拍", en: "Studio" } },
     { id: "editorial", label: { de: "Editorial", zh: "时尚", en: "Editorial" } },
     { id: "character", label: { de: "Charakter", zh: "角色", en: "Character" } },
@@ -252,6 +251,22 @@ window.SITE = (() => {
     { name: "neutral_01", cat: "studio" },
     { name: "bw_artsy_05", cat: "editorial" },
     { name: "neutral_03", cat: "studio" },
+    { name: "artsy_bw_profile_mysterious", cat: "editorial" },
+    { name: "fancy_red_chair_002", cat: "character" },
+    { name: "grey_background_chair", cat: "studio" },
+    { name: "hongkong_corssing_street", cat: "lifestyle" },
+    { name: "artsy_red_light", cat: "editorial" },
+    { name: "fancy_red_chair_003", cat: "character" },
+    { name: "grey_background_sexy", cat: "editorial" },
+    { name: "production_inside", cat: "character" },
+    { name: "artsy_plants", cat: "editorial" },
+    { name: "fancy_red_chair_004", cat: "character" },
+    { name: "grey_background_hair_covering_face", cat: "editorial" },
+    { name: "outside_big_jacket", cat: "lifestyle" },
+    { name: "grey_background_mysterious", cat: "editorial" },
+    { name: "hongkong_outside_advertisement", cat: "lifestyle" },
+    { name: "production_outside", cat: "character" },
+    { name: "shooting_outside_sporty", cat: "lifestyle" },
   ];
 
   /* ---------- Social platforms ---------- */

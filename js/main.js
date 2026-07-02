@@ -13,7 +13,7 @@
 
   const GALLERY_BASE = "assets/img/gallery/";
   let lang = detectLang();
-  let currentFilter = "all";
+  let currentFilter = "";
 
   /* ---------------- Language ---------------- */
   function detectLang() {
@@ -138,8 +138,9 @@
     const grid = $("#masonry");
     if (!filters || !grid) return;
 
+    currentFilter = currentFilter || S.GALLERY_CATS[0].id;
     filters.innerHTML = S.GALLERY_CATS.map(
-      (c) => `<button type="button" class="gfilter${c.id === "all" ? " is-active" : ""}" data-cat="${c.id}">${t(c.label, lang)}</button>`
+      (c) => `<button type="button" class="gfilter${c.id === currentFilter ? " is-active" : ""}" data-cat="${c.id}">${t(c.label, lang)}</button>`
     ).join("");
 
     grid.innerHTML = S.GALLERY.map((g, idx) => {
@@ -173,7 +174,7 @@
 
   function applyFilter() {
     $$("#masonry .tile").forEach((tile) => {
-      const show = currentFilter === "all" || tile.dataset.cat === currentFilter;
+      const show = tile.dataset.cat === currentFilter;
       tile.classList.toggle("is-hidden", !show);
     });
   }
