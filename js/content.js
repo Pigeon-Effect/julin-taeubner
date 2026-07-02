@@ -188,37 +188,31 @@ window.SITE = (() => {
      char: character / descriptor (string kept as-is, or {de,zh,en})
      note: production note ({de,zh,en} or string)                         */
   const FILM_CATS = [
-    { id: "film", label: { de: "Film", zh: "电影", en: "Film" } },
-    { id: "tv", label: { de: "Fernsehen", zh: "电视剧", en: "Television" } },
-    { id: "web", label: { de: "Web", zh: "网络作品", en: "Web" } },
+    { id: "screen", label: { de: "Film & Fernsehen", zh: "影视作品", en: "Film & Television" } },
     { id: "ad", label: { de: "Werbung & Medien", zh: "广告 & 媒体", en: "Commercials & Media" } },
   ];
 
   const FILMOGRAPHY = {
-    film: [
-      { title: "Cannibalism", year: "2025", role: "lead", char: "Nuan Nuan · 暖暖", note: { de: "Internationaler Arthouse-Film", zh: "国际文艺片", en: "International Art Film" } },
+    screen: [
       { title: "Lion Fist", year: "2026", role: "lead", char: "Wu Mei · 五枚", note: { de: "Internationales Kino", zh: "国际院线", en: "International Cinema" } },
       { title: "Youri", year: "2026", role: "support", note: { de: "Produktion: Impresario", zh: "出品：Impresario", en: "Impresario Production" } },
-      { title: "火线行动", alt: "Line of Fire", year: "", role: "lead", char: "张兆雪 · Zhang Zhaoxue" },
-      { title: "同程似锦", alt: "A Journey in Bloom", year: "", role: "support", note: { de: "Kinofilm", zh: "院线电影", en: "Theatrical Film" } },
-    ],
-    tv: [
-      { title: "荣耀乒乓", alt: "Glory of the Table Tennis", year: "2018", role: "support", char: "大刘 · Da Liu" },
-      { title: "木兰之巾帼英豪", alt: "Mulan: Heroine", year: "", role: "support", char: { de: "Rouran-Prinzessin · 柔然公主", zh: "柔然公主", en: "Rouran Princess · 柔然公主" }, note: { de: "Zweite Hauptrolle (女二)", zh: "女二号", en: "Second Female Lead (女二)" } },
-    ],
-    web: [
       { title: "The Good Shinobi", year: "2026", role: "lead", note: { de: "Vertikale Mini-Serie · Internet-Produktion (angekündigt)", zh: "竖屏微短剧 · 网络出品（待播）", en: "Vertical Mini-Series · Internet Production (upcoming)" } },
-      { title: "末日边缘", alt: "Edge of Doomsday", year: "", role: "lead", char: "诺兰 · Nuolan", note: { de: "Web-Film", zh: "网络电影", en: "Web Film" } },
-      { title: "我们的逆青春", alt: "Our Reverse Youth", year: "", role: "support", char: "麦琪 · Maggie", note: { de: "Webserie", zh: "网络剧", en: "Web Series" } },
+      { title: "Cannibalism", year: "2025", role: "lead", char: "Nuan Nuan · 暖暖", note: { de: "Internationaler Arthouse-Film", zh: "国际文艺片", en: "International Art Film" } },
+      { title: "木兰之巾帼英豪", alt: "Mulan: Heroine", year: "2020", role: "support", char: { de: "Rouran-Prinzessin · 柔然公主", zh: "柔然公主", en: "Rouran Princess · 柔然公主" }, note: { de: "Zweite Hauptrolle (女二)", zh: "女二号", en: "Second Female Lead (女二)" } },
+      { title: "我们的逆青春", alt: "Our Reverse Youth", year: "2020", role: "support", char: "麦琪 · Maggie", note: { de: "Webserie", zh: "网络剧", en: "Web Series" } },
+      { title: "末日边缘", alt: "Edge of Doomsday", year: "2019", role: "lead", char: "诺兰 · Nuolan", note: { de: "Web-Film", zh: "网络电影", en: "Web Film" } },
+      { title: "火线行动", alt: "Line of Fire", year: "2018", role: "lead", char: "张兆雪 · Zhang Zhaoxue" },
+      { title: "荣耀乒乓", alt: "Glory of the Table Tennis", year: "2018", role: "support", char: "大刘 · Da Liu" },
+      { title: "同程似锦", alt: "A Journey in Bloom", year: "2017", role: "support", note: { de: "Kinofilm", zh: "院线电影", en: "Theatrical Film" } },
     ],
     ad: [
-      { title: "Audi E-Concept", year: "2024–25", char: { de: "Astronautin · 女航天员", zh: "女航天员", en: "Female Astronaut · 女航天员" } },
       { title: "PENNY", year: "2025", note: { de: "Kampagne", zh: "广告代言", en: "Campaign" } },
+      { title: "Audi E-Concept", year: "2024–25", char: { de: "Astronautin · 女航天员", zh: "女航天员", en: "Female Astronaut · 女航天员" } },
+      { title: "Golden Wings Center", year: "2019", note: { de: "Botschafterin", zh: "形象大使", en: "Ambassador" } },
+      { title: "医哥医姐你可来了！", alt: "Youku Variety", year: "2018", note: { de: "Youku Variety-Show", zh: "优酷综艺", en: "Youku Variety Show" } },
       { title: "GenanX", year: "2017–18", note: { de: "Markenbotschafterin", zh: "品牌大使", en: "Brand Ambassador" } },
       { title: "New Face China · Salztokyo × SAT.1", year: "2017–18", note: { de: "Fernsehauftritt", zh: "电视节目", en: "Television Feature" } },
-      { title: "Golden Wings Center", year: "2019", note: { de: "Botschafterin", zh: "形象大使", en: "Ambassador" } },
       { title: "This is Street Dance · Create 101", year: "2017–18", note: { de: "TV-Show", zh: "综艺节目", en: "TV Show" } },
-      { title: "医哥医姐你可来了！", alt: "Youku Variety", year: "2018", note: { de: "Youku Variety-Show", zh: "优酷综艺", en: "Youku Variety Show" } },
       { title: { de: "Qingdao Deutsche Kulturwoche", zh: "青岛德国文化周", en: "Qingdao German Culture Week" }, year: "2017", note: { de: "Moderation / Gatekeeper", zh: "主持 / 迎宾", en: "Host / Gatekeeper" } },
       { title: "Keep Battle Beijing", year: "2016", note: { de: "Championin", zh: "冠军", en: "Champion" } },
       { title: { de: "Zhuang Zi's T-Raum", zh: "庄子的 T-Raum", en: "Zhuang Zi's T-Raum" }, year: "2016", note: { de: "Performance · Galerie T", zh: "现场演出 · Galerie T", en: "Performance · Galerie T" } },

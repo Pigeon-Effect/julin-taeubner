@@ -121,16 +121,12 @@ h1, h2, h3 { margin: 0; font-weight: 500; line-height: 1.08; }
   transition: color 0.35s, opacity 0.2s;
 }
 .is-scrolled .nav a { color: var(--ink-soft); }
-.nav a:not(.nav-cta)::after {
+.nav a::after {
   content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 0; background: var(--vermilion);
   transition: width 0.3s var(--ease);
 }
-.nav a:not(.nav-cta):hover::after { width: 100%; }
-.nav a:not(.nav-cta):hover { color: var(--vermilion); }
-.nav-cta {
-  border: 1px solid currentColor; padding: 0.5em 1.1em; border-radius: 999px;
-}
-.nav-cta:hover { background: var(--vermilion); border-color: var(--vermilion); color: #fff; }
+.nav a:hover::after { width: 100%; }
+.nav a:hover { color: var(--vermilion); }
 
 .header-tools { display: flex; align-items: center; gap: 0.9rem; }
 .lang-switch { display: flex; align-items: center; gap: 0.15rem; }
