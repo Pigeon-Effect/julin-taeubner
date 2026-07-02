@@ -152,7 +152,7 @@ window.SITE = (() => {
     { label: { de: "Geboren", zh: "出生", en: "Born" }, value: { de: "1. Nov 1993", zh: "1993年11月1日", en: "1 Nov 1993" } },
     { label: { de: "Herkunft", zh: "国籍", en: "Nationality" }, value: { de: "Deutsch–Chinesisch", zh: "德国 · 中国", en: "German–Chinese" } },
     { label: { de: "Wurzeln", zh: "祖籍", en: "Heritage" }, value: { de: "Deutschland · Nanjing", zh: "德国 · 南京", en: "Germany · Nanjing" } },
-    { label: { de: "Größe", zh: "身高", en: "Height" }, value: { de: "166 cm", zh: "166 cm", en: "166 cm" } },
+    { label: { de: "Größe", zh: "身高", en: "Height" }, value: { de: "167 cm", zh: "167 cm", en: "167 cm" } },
     { label: { de: "Gewicht", zh: "体重", en: "Weight" }, value: { de: "52 kg", zh: "52 kg", en: "52 kg" } },
     { label: { de: "Maße", zh: "三围", en: "Measurements" }, value: { de: "86 · 59 · 88 cm", zh: "86 · 59 · 88 cm", en: "86 · 59 · 88 cm" } },
   ];
@@ -196,18 +196,18 @@ window.SITE = (() => {
 
   const FILMOGRAPHY = {
     film: [
-      { title: "Wu Mei", year: "2026", role: "lead", note: { de: "Internationales Kino", zh: "国际院线", en: "International Cinema" } },
       { title: "Cannibalism", year: "2025", role: "lead", char: "Nuan Nuan · 暖暖", note: { de: "Internationaler Arthouse-Film", zh: "国际文艺片", en: "International Art Film" } },
-      { title: "Lion Fist", year: "", role: "cast", note: { de: "Spielfilm", zh: "电影", en: "Feature Film" } },
+      { title: "Lion Fist", year: "2026", role: "lead", char: "Wu Mei · 五枚", note: { de: "Internationales Kino", zh: "国际院线", en: "International Cinema" } },
       { title: "Youri", year: "2026", role: "support", note: { de: "Produktion: Impresario", zh: "出品：Impresario", en: "Impresario Production" } },
       { title: "火线行动", alt: "Line of Fire", year: "", role: "lead", char: "张兆雪 · Zhang Zhaoxue" },
       { title: "同程似锦", alt: "A Journey in Bloom", year: "", role: "support", note: { de: "Kinofilm", zh: "院线电影", en: "Theatrical Film" } },
     ],
     tv: [
-      { title: "荣耀乒乓", alt: "Glory of the Table Tennis", year: "", role: "support", char: "大刘 · Da Liu" },
+      { title: "荣耀乒乓", alt: "Glory of the Table Tennis", year: "2018", role: "support", char: "大刘 · Da Liu" },
       { title: "木兰之巾帼英豪", alt: "Mulan: Heroine", year: "", role: "support", char: { de: "Rouran-Prinzessin · 柔然公主", zh: "柔然公主", en: "Rouran Princess · 柔然公主" }, note: { de: "Zweite Hauptrolle (女二)", zh: "女二号", en: "Second Female Lead (女二)" } },
     ],
     web: [
+      { title: "The Good Shinobi", year: "2026", role: "lead", note: { de: "Vertikale Mini-Serie · Internet-Produktion (angekündigt)", zh: "竖屏微短剧 · 网络出品（待播）", en: "Vertical Mini-Series · Internet Production (upcoming)" } },
       { title: "末日边缘", alt: "Edge of Doomsday", year: "", role: "lead", char: "诺兰 · Nuolan", note: { de: "Web-Film", zh: "网络电影", en: "Web Film" } },
       { title: "我们的逆青春", alt: "Our Reverse Youth", year: "", role: "support", char: "麦琪 · Maggie", note: { de: "Webserie", zh: "网络剧", en: "Web Series" } },
     ],
