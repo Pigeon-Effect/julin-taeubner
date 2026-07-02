@@ -1,8 +1,8 @@
 /* ============================================================
    Julin Täubner — portfolio styles
    Palette: ink / warm paper / vermilion (朱红) / muted gold
-   Type: Cormorant Garamond (display) · Inter (body)
-         Noto Serif SC / Noto Sans SC (CJK fallback)
+   Type: Cormorant Garamond (display) · Spectral (body)
+         Noto Serif SC (CJK fallback)
    ============================================================ */
 
 :root {
@@ -20,7 +20,7 @@
   --gold: #b08d57;
 
   --font-display: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
-  --font-body: "Inter", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Spectral", "Noto Serif SC", Georgia, serif;
 
   --wrap: 1200px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
@@ -125,8 +125,8 @@ h1, h2, h3 { margin: 0; font-weight: 500; line-height: 1.08; }
   content: ""; position: absolute; left: 0; bottom: -2px; height: 1px; width: 0; background: var(--vermilion);
   transition: width 0.3s var(--ease);
 }
-.nav a:hover::after { width: 100%; }
-.nav a:hover { color: var(--vermilion); }
+.nav a:hover::after, .nav a.is-current::after { width: 100%; }
+.nav a:hover, .nav a.is-current { color: var(--vermilion); }
 
 .header-tools { display: flex; align-items: center; gap: 0.9rem; }
 .lang-switch { display: flex; align-items: center; gap: 0.15rem; }
@@ -156,7 +156,7 @@ h1, h2, h3 { margin: 0; font-weight: 500; line-height: 1.08; }
    ============================================================ */
 .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; color: var(--paper); }
 .hero-media { position: absolute; inset: 0; z-index: -1; overflow: hidden; background: #14110f; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; animation: heroZoom 14s var(--ease) forwards; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 74% 32%; animation: heroZoom 14s var(--ease) forwards; }
 @keyframes heroZoom { from { transform: scale(1.08); } to { transform: scale(1); } }
 .hero-scrim {
   position: absolute; inset: 0;
@@ -164,7 +164,11 @@ h1, h2, h3 { margin: 0; font-weight: 500; line-height: 1.08; }
     linear-gradient(to top, rgba(10,8,6,0.82) 0%, rgba(10,8,6,0.28) 42%, rgba(10,8,6,0.15) 70%, rgba(10,8,6,0.45) 100%),
     linear-gradient(to right, rgba(10,8,6,0.55), rgba(10,8,6,0) 60%);
 }
-.hero-content { padding-bottom: clamp(3.5rem, 9vh, 7rem); padding-top: calc(var(--header-h) + 2rem); }
+.hero-content {
+  width: min(100% - var(--gutter) * 2, 42rem);
+  margin-inline: clamp(var(--gutter), 7vw, 8rem) auto;
+  padding-bottom: clamp(3.5rem, 9vh, 7rem); padding-top: calc(var(--header-h) + 2rem);
+}
 .hero-eyebrow {
   font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; margin: 0 0 1.1rem;
   color: var(--paper); opacity: 0; animation: fadeUp 0.9s 0.2s var(--ease) forwards;

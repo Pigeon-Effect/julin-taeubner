@@ -356,6 +356,33 @@
     els.forEach((el) => io.observe(el));
   }
 
+  /* ---------------- Scroll spy ---------------- */
+  // Mirror the nav hover underline on the link whose section is in view.
+  function initScrollSpy() {
+    const links = $$("#primaryNav a[href^='#']");
+    const map = new Map();
+    links.forEach((a) => {
+      const sec = document.getElementById(a.getAttribute("href").slice(1));
+      if (sec) map.set(sec, a);
+    });
+    if (!map.size || !("IntersectionObserver" in window)) return;
+
+    const setCurrent = (link) =>
+      links.forEach((a) => a.classList.toggle("is-current", a === link));
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        // Pick the entry closest to the top that is intersecting.
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length) setCurrent(map.get(visible[0].target));
+      },
+      { rootMargin: "-100px 0px -55% 0px", threshold: 0 }
+    );
+    map.forEach((_, sec) => io.observe(sec));
+  }
+
   // Tag dynamically-created rows as reveal targets after render.
   function markReveals() {
     $$("#masonry .tile, .film-item, .stat, .social-card, .chips li").forEach((el) => el.classList.add("reveal"));
@@ -371,6 +398,7 @@
     renderGallery();
     applyLang(lang);   // fills all dynamic + static text
     markReveals();
+    initScrollSpy();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
