@@ -29,7 +29,7 @@ window.SITE = (() => {
 
       "about.kicker": "Über mich",
       "about.title": "Zwischen zwei Kulturen",
-      "about.lead": "Julin Täubner ist eine deutsch-chinesische Schauspielerin mit Wurzeln in Deutschland und Nanjing. Sie arbeitet mühelos zwischen europäischem und asiatischem Kino — von intimen Arthouse-Rollen bis zu actiongeladenen Hauptrollen — getragen von Tanz, Kampfkunst und einer präzisen körperlichen Präsenz.",
+      "about.lead": "Julin Täubner ist eine deutsch-chinesische Schauspielerin mit Wurzeln in Deutschland und China. Sie arbeitet mühelos zwischen europäischem und asiatischem Kino — von intimen Arthouse-Rollen bis zu actiongeladenen Hauptrollen — getragen von Tanz, Kampfkunst und einer präzisen körperlichen Präsenz.",
       "about.languagesTitle": "Sprachen",
       "about.skillsTitle": "Fähigkeiten",
 
@@ -44,11 +44,8 @@ window.SITE = (() => {
 
       "contact.kicker": "Booking",
       "contact.title": "Lassen Sie uns zusammenarbeiten",
-      "contact.lead": "Für Casting-Anfragen, Bookings und Kooperationen erreichen Sie mich am besten per E-Mail oder über das Formular.",
-      "contact.name": "Name",
-      "contact.email": "E-Mail",
-      "contact.message": "Nachricht",
-      "contact.send": "Nachricht senden",
+      "contact.lead": "Für Casting-Anfragen, Bookings und Kooperationen erreichen Sie mich am besten per E-Mail oder über meine Agentur.",
+      "contact.agency": "Agentur",
 
       "footer.rights": "Alle Rechte vorbehalten.",
 
@@ -73,7 +70,7 @@ window.SITE = (() => {
 
       "about.kicker": "关于",
       "about.title": "身处两种文化",
-      "about.lead": "菊麟是一位德中混血演员，血脉连结德国与南京。她自如穿梭于欧洲与亚洲影坛——从细腻的文艺片到充满动作张力的主角——以舞蹈、武术与精准的肢体表现力为根基。",
+      "about.lead": "菊麟是一位德中混血演员，血脉连结德国与中国。她自如穿梭于欧洲与亚洲影坛——从细腻的文艺片到充满动作张力的主角——以舞蹈、武术与精准的肢体表现力为根基。",
       "about.languagesTitle": "语言",
       "about.skillsTitle": "技能",
 
@@ -88,11 +85,8 @@ window.SITE = (() => {
 
       "contact.kicker": "邀约",
       "contact.title": "期待与您合作",
-      "contact.lead": "试镜、邀约与合作事宜，欢迎通过电子邮件或下方表单与我联系。",
-      "contact.name": "姓名",
-      "contact.email": "电子邮箱",
-      "contact.message": "留言",
-      "contact.send": "发送信息",
+      "contact.lead": "试镜、邀约与合作事宜，欢迎通过电子邮件或我的经纪公司与我联系。",
+      "contact.agency": "经纪公司",
 
       "footer.rights": "版权所有。",
 
@@ -117,7 +111,7 @@ window.SITE = (() => {
 
       "about.kicker": "About",
       "about.title": "Between two cultures",
-      "about.lead": "Julin Täubner is a German–Chinese actress with roots in Germany and Nanjing. She moves fluidly between European and Asian cinema — from intimate arthouse roles to action-driven leads — grounded in dance, martial arts and a precise physical presence.",
+      "about.lead": "Julin Täubner is a German–Chinese actress with roots in Germany and China. She moves fluidly between European and Asian cinema — from intimate arthouse roles to action-driven leads — grounded in dance, martial arts and a precise physical presence.",
       "about.languagesTitle": "Languages",
       "about.skillsTitle": "Skills",
 
@@ -132,11 +126,8 @@ window.SITE = (() => {
 
       "contact.kicker": "Booking",
       "contact.title": "Let's work together",
-      "contact.lead": "For casting enquiries, bookings and collaborations, the best way to reach me is by email or through the form below.",
-      "contact.name": "Name",
-      "contact.email": "Email",
-      "contact.message": "Message",
-      "contact.send": "Send Message",
+      "contact.lead": "For casting enquiries, bookings and collaborations, the best way to reach me is by email or through my agency.",
+      "contact.agency": "Agency",
 
       "footer.rights": "All rights reserved.",
 
@@ -170,17 +161,11 @@ window.SITE = (() => {
     { de: "Kampfkunst-Choreografie", zh: "武术编排", en: "Martial Arts Choreography" },
     { de: "Karate", zh: "空手道", en: "Karate" },
     { de: "Boxen", zh: "拳击", en: "Boxing" },
-    { de: "Drahtseil / Wire Work", zh: "威亚", en: "Wire Work" },
     { de: "Klavier", zh: "钢琴", en: "Piano" },
     { de: "Gitarre", zh: "吉他", en: "Guitar" },
-    { de: "Klettern", zh: "攀岩", en: "Rock Climbing" },
     { de: "Snowboarden", zh: "单板滑雪", en: "Snowboarding" },
     { de: "Reiten", zh: "马术", en: "Horseback Riding" },
     { de: "Bogenschießen", zh: "射箭", en: "Archery" },
-    { de: "Yoga", zh: "瑜伽", en: "Yoga" },
-    { de: "Rollschuh", zh: "轮滑", en: "Roller Skating" },
-    { de: "Führerschein", zh: "驾照", en: "Driving License" },
-    { de: "Schnelle Auffassung", zh: "快速学习", en: "Quick Learner" },
   ];
 
   /* ---------- Filmography ----------
@@ -195,26 +180,27 @@ window.SITE = (() => {
   const FILMOGRAPHY = {
     screen: [
       { title: "Lion Fist", year: "2026", role: "lead", char: "Wu Mei · 五枚", note: { de: "Internationales Kino", zh: "国际院线", en: "International Cinema" } },
-      { title: "Youri", year: "2026", role: "support", note: { de: "Produktion: Impresario", zh: "出品：Impresario", en: "Impresario Production" } },
-      { title: "The Good Shinobi", year: "2026", role: "lead", note: { de: "Vertikale Mini-Serie · Internet-Produktion (angekündigt)", zh: "竖屏微短剧 · 网络出品（待播）", en: "Vertical Mini-Series · Internet Production (upcoming)" } },
+      { title: "Youri", year: "2026", role: "support", note: { de: "Impresario · Biopic", zh: "Impresario · 传记片", en: "Impresario · Biopic" } },
+      { title: "The Good Shinobi", year: "2026", role: "lead", char: "Yin Law", note: { de: "Vertikale Mini-Serie", zh: "竖屏微短剧", en: "Vertical Mini-Series" } },
       { title: "Cannibalism", year: "2025", role: "lead", char: "Nuan Nuan · 暖暖", note: { de: "Internationaler Arthouse-Film", zh: "国际文艺片", en: "International Art Film" } },
-      { title: "木兰之巾帼英豪", alt: "Mulan: Heroine", year: "2020", role: "support", char: { de: "Rouran-Prinzessin · 柔然公主", zh: "柔然公主", en: "Rouran Princess · 柔然公主" }, note: { de: "Zweite Hauptrolle (女二)", zh: "女二号", en: "Second Female Lead (女二)" } },
+      { title: "Running Games", year: "2025", role: "support", note: { de: "Actionfilm", zh: "动作片", en: "Action" } },
+      { title: "木兰之巾帼英豪", alt: "Mulan: Heroine", year: "2020", role: "support", char: { de: "Prinzessin von Rouran · 柔然公主", zh: "柔然公主", en: "Princess of Rouran · 柔然公主" }, note: { de: "Zweite Hauptrolle (女二)", zh: "女二号", en: "Second Female Lead (女二)" } },
       { title: "我们的逆青春", alt: "Our Reverse Youth", year: "2020", role: "support", char: "麦琪 · Maggie", note: { de: "Webserie", zh: "网络剧", en: "Web Series" } },
       { title: "末日边缘", alt: "Edge of Doomsday", year: "2019", role: "lead", char: "诺兰 · Nuolan", note: { de: "Web-Film", zh: "网络电影", en: "Web Film" } },
       { title: "火线行动", alt: "Line of Fire", year: "2018", role: "lead", char: "张兆雪 · Zhang Zhaoxue" },
       { title: "荣耀乒乓", alt: "Glory of the Table Tennis", year: "2018", role: "support", char: "大刘 · Da Liu" },
-      { title: "同程似锦", alt: "A Journey in Bloom", year: "2017", role: "support", note: { de: "Kinofilm", zh: "院线电影", en: "Theatrical Film" } },
+      { title: "同程似锦", alt: "A Journey in Bloom", year: "2017", role: "support", note: { de: "Horrorkomödie", zh: "恐怖喜剧", en: "Horror Comedy" } },
     ],
     ad: [
-      { title: "PENNY", year: "2025", note: { de: "Kampagne", zh: "广告代言", en: "Campaign" } },
-      { title: "Audi E-Concept", year: "2024–25", char: { de: "Astronautin · 女航天员", zh: "女航天员", en: "Female Astronaut · 女航天员" } },
+      { title: "PENNY", year: "2025", note: { de: "Herbstkampagne", zh: "秋季广告", en: "Autumn Campaign" } },
+      { title: "Audi E-Concept", year: "2024–25", char: { de: "Astronautin · 航天员", zh: "航天员", en: "Astronaut · 航天员" } },
       { title: "Golden Wings Center", year: "2019", note: { de: "Botschafterin", zh: "形象大使", en: "Ambassador" } },
       { title: "医哥医姐你可来了！", alt: "Youku Variety", year: "2018", note: { de: "Youku Variety-Show", zh: "优酷综艺", en: "Youku Variety Show" } },
       { title: "GenanX", year: "2017–18", note: { de: "Markenbotschafterin", zh: "品牌大使", en: "Brand Ambassador" } },
       { title: "New Face China · Salztokyo × SAT.1", year: "2017–18", note: { de: "Fernsehauftritt", zh: "电视节目", en: "Television Feature" } },
-      { title: "This is Street Dance · Create 101", year: "2017–18", note: { de: "TV-Show", zh: "综艺节目", en: "TV Show" } },
+      { title: "This is Street Dance · Produce 101", year: "2017–18", note: { de: "TV-Show", zh: "综艺节目", en: "TV Show" } },
       { title: { de: "Qingdao Deutsche Kulturwoche", zh: "青岛德国文化周", en: "Qingdao German Culture Week" }, year: "2017", note: { de: "Moderation / Gatekeeper", zh: "主持 / 迎宾", en: "Host / Gatekeeper" } },
-      { title: "Keep Battle Beijing", year: "2016", note: { de: "Championin", zh: "冠军", en: "Champion" } },
+      { title: "Keep Keep Battle Beijing", year: "2016", note: { de: "Mitglied der Sieger-Tanzgruppe", zh: "冠军舞团成员", en: "Member of the Winning Dance Group" } },
       { title: { de: "Zhuang Zi's T-Raum", zh: "庄子的 T-Raum", en: "Zhuang Zi's T-Raum" }, year: "2016", note: { de: "Performance · Galerie T", zh: "现场演出 · Galerie T", en: "Performance · Galerie T" } },
     ],
   };
@@ -225,7 +211,7 @@ window.SITE = (() => {
   const GALLERY_CATS = [
     { id: "studio", label: { de: "Studio", zh: "棚拍", en: "Studio" } },
     { id: "editorial", label: { de: "Editorial", zh: "时尚", en: "Editorial" } },
-    { id: "character", label: { de: "Charakter", zh: "角色", en: "Character" } },
+    { id: "character", label: { de: "Stills", zh: "剧照", en: "Stills" } },
     { id: "lifestyle", label: { de: "Lifestyle", zh: "生活", en: "Lifestyle" } },
   ];
 
@@ -276,7 +262,19 @@ window.SITE = (() => {
     { id: "weibo", name: { de: "Weibo", zh: "微博", en: "Weibo" }, handle: "菊麟", url: "https://weibo.com/n/菊麟" },
     { id: "xiaohongshu", name: { de: "Xiaohongshu (RED)", zh: "小红书", en: "Xiaohongshu (RED)" }, handle: "菊麟", url: "https://www.xiaohongshu.com/search_result?keyword=菊麟" },
     { id: "baidu", name: { de: "Baidu Baike", zh: "百度百科", en: "Baidu Baike" }, handle: "菊麟", url: "https://baike.baidu.com/item/菊麟" },
+    { id: "imdb", name: "IMDb", handle: "Julin Täubner", url: "https://www.imdb.com/name/nm18158355/" },
+    { id: "filmmakers", name: "Filmmakers", handle: "julin-taeubner", url: "https://www.filmmakers.eu/en/actors/julin-taeubner" },
+    { id: "linkedin", name: "LinkedIn", handle: "Ju-Lin (Julia) Täubner", url: "https://www.linkedin.com/in/ju-lin-julia-t%C3%A4ubner-a09050246/" },
   ];
 
-  return { CONFIG, I18N, STATS, LANGUAGES, SKILLS, FILM_CATS, FILMOGRAPHY, GALLERY_CATS, GALLERY, SOCIALS };
+  /* ---------- Agency ---------- */
+  const AGENCY = {
+    label: { de: "Agentur", zh: "经纪公司", en: "Agency" },
+    name: "Mai und Juli",
+    url: "https://maiundjuli.de/",
+    email: "info@maiundjuli.de",
+    logo: "assets/img/logo_mai_und_juli.png",
+  };
+
+  return { CONFIG, I18N, STATS, LANGUAGES, SKILLS, FILM_CATS, FILMOGRAPHY, GALLERY_CATS, GALLERY, SOCIALS, AGENCY };
 })();

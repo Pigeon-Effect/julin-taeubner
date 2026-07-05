@@ -269,6 +269,9 @@
     weibo: '<svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="10" cy="15" rx="6.6" ry="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16.5 5.2a4 4 0 0 1 3.9 4.2M16.2 8a1.7 1.7 0 0 1 1.6 1.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
     xiaohongshu: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7 9v6M7 9h1.6a1.7 1.7 0 0 1 0 3.4H7m9.5-3.4H14V15m2.7-6h.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     baidu: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5v3m0-3c0-1 .7-1.6 1.6-1.6.9 0 1.4.6 1.4 1.6v3m2-3v3m0-3h1.9m-1.9 1.4h1.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>',
+    imdb: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6.5" width="19" height="11" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 10v4m2.6 0v-4l1.2 4 1.2-4v4m2.5 0v-4h1a1.1 1.1 0 0 1 1.1 1.1v1.8a1.1 1.1 0 0 1-1.1 1.1h-1z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    filmmakers: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 8.5h18M3 15.5h18M7 4.5v4m10-4v4M7 15.5v4m10-4v4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>',
+    linkedin: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7.4 10.2V17M7.4 7.2v.1M11.3 17v-4a2.3 2.3 0 0 1 4.6 0v4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   };
 
   function renderSocials() {
@@ -291,29 +294,6 @@
     const email = S.CONFIG.email;
     const link = $("#contactEmail");
     if (link) { link.textContent = email; link.href = `mailto:${email}`; }
-
-    const form = $("#contactForm");
-    const note = $("#formNote");
-    if (!form) return;
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const name = (data.get("name") || "").toString().trim();
-      const from = (data.get("email") || "").toString().trim();
-      const msg = (data.get("message") || "").toString().trim();
-      if (!name || !from || !msg) {
-        note.textContent = { de: "Bitte alle Felder ausfüllen.", zh: "请填写所有字段。", en: "Please fill in all fields." }[lang];
-        note.className = "form-note is-error";
-        return;
-      }
-      // Static site: hand off to the visitor's mail client.
-      const subject = encodeURIComponent(`Booking enquiry — ${name}`);
-      const body = encodeURIComponent(`${msg}\n\n— ${name}\n${from}`);
-      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
-      note.textContent = { de: "Ihr E-Mail-Programm wird geöffnet …", zh: "正在打开您的邮件程序……", en: "Opening your email app…" }[lang];
-      note.className = "form-note is-ok";
-      form.reset();
-    });
   }
 
   /* ---------------- Header / nav ---------------- */
